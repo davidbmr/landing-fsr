@@ -1,0 +1,22 @@
+.button__action {
+	padding: 10px 20px;
+	display: flex;
+	gap: 8px;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	border-radius: 8px;
+	background-color: #fff;
+	border: none;
+	outline: none;
+	font-family: "Inter";
+}
+
+.button__text {
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 21.78px;
+	text-align: left;
+	text-underline-position: from-font;
+	text-decoration-skip-ink: none;
+}

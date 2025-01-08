@@ -1,0 +1,8 @@
+.column__primeDataTable:first-child {
+	color: #1e1e1e !important;
+	font-family: Inter;
+	font-size: 17px !important;
+	font-weight: 500 !important;
+	line-height: 26.63px !important;
+	text-align: left;
+}

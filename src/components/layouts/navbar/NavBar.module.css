@@ -1,0 +1,114 @@
+.navbar {
+	background: transparent;
+	position: absolute;
+	width: 100%;
+	padding: 60px 100px 0px 100px;
+	transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+	z-index: 3;
+	transition: 0.5s ease;
+}
+
+.navbar.scrolled {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	padding: 40px 100px;
+	background-color: #333;
+}
+
+.body {
+	display: flex;
+	justify-content: space-between;
+}
+
+@media screen and (max-width: 1296px) {
+	.body {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-flow: column;
+		gap: 15px;
+	}
+	.content {
+		display: flex;
+		flex-flow: column;
+		gap: 15px;
+	}
+	.navbar {
+		display: none;
+	}
+	.navbar__button {
+		display: block;
+	}
+	.navbar.scrolled {
+		display: none;
+	}
+	.responsive {
+		top: 0;
+		width: 100%;
+		background-color: #333;
+	}
+	.menu {
+		padding: 40px;
+		display: flex;
+		align-items: center;
+		gap: 40px;
+	}
+	.responsive__navbar {
+		transition: opacity 0.5s ease, transform 0.5s ease;
+		display: block;
+		position: absolute;
+		top: 0;
+		opacity: 0;
+		transform: translateY(-100%);
+		width: 100%;
+		padding: 40px 100px;
+		background-color: #333;
+	}
+
+	.responsive__navbar.show {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.content {
+	display: flex;
+	align-items: center;
+	gap: 35px;
+}
+
+.elements {
+	text-decoration: none;
+	color: inherit;
+	background: none;
+	border: none;
+	color: white;
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 29.05px;
+	text-align: left;
+	text-underline-position: from-font;
+	text-decoration-skip-ink: none;
+}
+
+.elements:hover {
+	color: #838587;
+}
+
+.scroll {
+	overflow-y: scroll;
+}
+
+.scrolled {
+	transition: 0.5s ease;
+
+	opacity: 0;
+}
+.scrolled:hover {
+	transition: 0.5s ease;
+	opacity: 1;
+}
+.scrolled > .body > .content {
+	opacity: 2;
+}
